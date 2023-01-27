@@ -1,0 +1,30 @@
+[user]
+  name = Esther Marie
+[init]
+  defaultBranch = main
+[color]
+  ui = true
+[core]
+  editor = vim
+[alias]
+  ck = checkout
+  cb = checkout -b
+  br = branch
+  bd = branch -d
+  cm = commit -m
+  ca = commit --amend
+  ss = stash save
+  sa = stash apply
+  sp = stash pop
+  sd = stash drop
+  sl = stash list
+  lo = log --oneline
+  hist = log --oneline --graph --decorate --all
+  undo = reset --soft HEAD~
+  unstage = restore --staged
+[fetch]
+  prune = true
+[pull]
+  rebase = true
+[rebase]
+  autoStash = true
