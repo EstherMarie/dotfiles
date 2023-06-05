@@ -5,13 +5,13 @@
 [color]
   ui = true
 [core]
-  editor = vim
+  editor = nvim
 [alias]
+  dt = difftool 	
+  mt = mergetool 	
   ck = checkout
-  cb = checkout -b
   br = branch
-  bd = branch -d
-  cm = commit -m
+  st = status
   ca = commit --amend
   ss = stash save
   sa = stash apply
@@ -28,3 +28,13 @@
   rebase = true
 [rebase]
   autoStash = true
+[grep]
+  linenumber = true
+[diff]
+  tool = nvimdiff
+[difftool "nvimdiff"]
+  cmd = nvim -d $LOCAL $REMOTE
+[merge]
+  tool = nvimmerge
+[mergetool "nvimmerge"]
+  cmd = nvim -d $LOCAL $BASE $REMOTE $MERGED -c '$wincmd w' -c 'wincmd J'
