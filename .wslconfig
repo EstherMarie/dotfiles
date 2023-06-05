@@ -1,0 +1,5 @@
+# Adicione este arquivo em: C:\Users\{usuario}\.wslconfig
+
+[wsl2]
+memory=4GB
+processors=2
