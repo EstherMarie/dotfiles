@@ -124,6 +124,9 @@ export NVM_DIR="$HOME/.nvm"
 # Lunarvim path config
 export PATH="$HOME/.local/bin":$PATH
 
+# GPG key
+export GPG_TTY=$(tty)
+
 # Show current git branch with colors in Bash prompt
 git_branch() {
   git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
